@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     <style>
+        /* Unidades de medida relativas */
+        :root{
+            font-size: 50px;
+        }
+
+
+        body{
+            font-size: 20px;
+        }
+
+        h1{
+            /* REM */
+            /* El rem esta siendo relativo a la raíz */
+            font-size: 2rem;
+            
+            /* EX */
+            /* La mitad de tamaño de la raíz */
+            font-size: 1ex;
+            
+            /* CH */
+            /* Toma el ancho del caracter 0 */
+            font-size: 1ch;
+        }
+
+        .em {
+            /* EM */
+            /* El rem esta siendo relativo al padre */
+            font-size: 2em;
+        }
+
+
+        div{
+            background: blue;
+
+            /* porcentaje */
+            width: 50%;
+            height: 200px;
+        }
+
+
+
+
+     </style>
+
+
+</head>
+<body>
+     <h1>Hola mundo</h1>
+     <h1 class="em">Hola mundo</h1>
+     <div></div>
+</body>
+</html>
