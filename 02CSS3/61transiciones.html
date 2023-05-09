@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     <style>
+          div{
+            width: 200px;
+			height: 200px;
+			margin: 70px;
+            display: inline-block;
+          }
+
+          .elemento1{
+               background: #ed8b1a;
+          }
+
+          .elemento1:hover{
+			background: #ff3300;
+          }
+
+
+          .elemento-transicion{
+               background: #00cedd; 
+
+               /* Propiedades de transicion */
+
+               /* transition-property: background; */
+               /* Cuanto va durar */
+               /* transition-duration: 1s; */
+               /* la velocidad en la que realizara las transiciones y animaciones */
+               /* Por ejemplo ease, arranca un poco rapido luego va lento */
+               /* transition-timing-function: linear; */
+               /* Cuanto tiempo tarda en iniciar */
+               /* transition-delay: 1s; */
+
+               /* Atajo */
+               
+               
+            }
+            
+            .elemento-transicion:hover{
+                background: #001380;
+                /* No se recomiento poner el transition
+                en una pseudoclase
+                por que cuando se quite de ese estado
+                se regresara la transicion de forma brusca */
+		    }
+
+
+     </style>
+
+
+
+</head>
+<body>
+     <div class="elemento1">
+     </div>
+     
+     
+     <div class="elemento-transicion">
+     </div>
+</body>
+</html>
