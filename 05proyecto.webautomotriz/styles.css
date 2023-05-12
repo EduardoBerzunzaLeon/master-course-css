@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* *Contenedor* */
+section{
+    height: calc(100vh - 50px);
+    background: url(wallpaper.jpg);
+    background-size: cover;
+    background-position: cover;
+}
+
+
+/* * Menu * */
+ul{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+}
+
+ul li{
+    float: left;
+    /* display: inline; */
+    width: 20%;
+    height: 100%;
+    list-style: none;
+    mix-blend-mode: hue;
+}
+
+ul:hover li{
+    opacity: 0;
+}
+
+ul li:hover{
+    opacity: 1;
+}
+
+/*? Colores del menu */
+ul li:nth-child(1) {
+    background: #F50;
+}
+
+ul li:nth-child(2) {
+    background: #50F;
+}
+
+ul li:nth-child(3) {
+    background: #00B3B3;
+}
+
+ul li:nth-child(4) {
+    background: #4C0;
+}
+
+ul li:nth-child(5) {
+    background: #E645A0;
+}
+
+
+/* ? HOVER DEL MENU */
+ul li:hover:nth-child(1) {
+    box-shadow: 0 0 0 calc(100vw + 100vh) #F50;
+}
+
+ul li:hover:nth-child(2) {
+    box-shadow: 0 0 0 calc(100vw + 100vh) #50F;
+}
+
+ul li:hover:nth-child(3) {
+    box-shadow: 0 0 0 calc(100vw + 100vh) #00B3B3;
+}
+
+ul li:hover:nth-child(4) {
+    box-shadow: 0 0 0 calc(100vw + 100vh) #4C0;
+}
+
+ul li:hover:nth-child(5) {
+    box-shadow: 0 0 0 calc(100vw + 100vh) #E645A0;
+}
