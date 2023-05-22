@@ -15,6 +15,7 @@
                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
           }
 
+
           body{
                display: flex;
                justify-content: center;
@@ -22,7 +23,7 @@
                height: 100vh;
                background: #E0F7FA;
           }
-
+       
           .container{
                display: flex;
                justify-content: center;
@@ -37,7 +38,7 @@
                height: 400px;
                margin: 20px;
                border-radius: 15px;
-               box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+               box-shadow: 0 5px 15px rgba(0,0,0, 0.2);
                display: flex;
                justify-content: center;
                align-items: center;
@@ -45,8 +46,8 @@
           }
 
           .img{
-             width: 100%;
-             height: 100%;  
+               width: 100%;
+               height: 100%;
           }
 
           .img img{
@@ -56,29 +57,26 @@
                object-position: center;
           }
 
-
           /* CONTENIDO */
           .content{
-              position: absolute; 
-              bottom: -160px;
-              width: 100%;
-              height: 160px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              flex-direction: column;
-              backdrop-filter: blur(15px);
-              transition: all .5s;
+               position: absolute;
+               bottom: -160px;
+               width: 100%;
+               height: 160px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-direction: column;
+               backdrop-filter: blur(15px);
+               transition: all .5s;
           }
 
           .card:hover .content{
                bottom: 0;
           }
 
-
-
           /* TEXTO */
-          .content .text{
+          .content .text {
                display: flex;
                justify-content: center;
                align-items: center;
@@ -96,6 +94,7 @@
                opacity: 0;
                transition: all .5s;
           }
+          
 
           .text span{
                font-size: 12px;
@@ -105,8 +104,6 @@
           .card:hover .text span{
                opacity: 1;
           }
-
-
 
           /* SOCIALES */
           .sociales{
@@ -123,10 +120,10 @@
                opacity: 0;
                transition: all .5s;
           }
-
+          
           .card:hover .sociales a{
-               transform: translateY(10px);
                opacity: 1;
+               transform: translateY(10px);    
           }
 
           .sociales a:nth-child(1){
@@ -140,7 +137,6 @@
           .sociales a:nth-child(3){
                transition-delay: .6s;
           }
-
 
      </style>
 
