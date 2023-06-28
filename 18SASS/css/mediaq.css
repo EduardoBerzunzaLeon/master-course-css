@@ -1,0 +1,18 @@
+/* Error: (max-width: 1200px) isn't a valid CSS value.
+ *    ,
+ * 37 |      @media screen and #{$desktop} {
+ *    |                          ^^^^^^^^
+ *    '
+ *   scss\mediaq.scss 37:26  desktop()
+ *   scss\mediaq.scss 60:6   root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: (max-width: 1200px) isn't a valid CSS value.\a    \2577 \a 37 \2502       @media screen and #{$desktop} {\d\a    \2502                           ^^^^^^^^\a    \2575 \a   scss\\mediaq.scss 37:26  desktop()\a   scss\\mediaq.scss 60:6   root stylesheet";
+}

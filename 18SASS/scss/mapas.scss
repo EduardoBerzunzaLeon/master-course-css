@@ -1,0 +1,32 @@
+// mapas son objetos
+$titulos: (
+    h1: 40px,
+    h2: 30px,
+    h3: 20px,
+    h4: 15px,
+    h5: 10px,
+    h6: 8px
+);
+
+$colores: (
+    azul: blue,
+    rojo: red,
+    verde: green
+);
+
+// Acceder a elementos del mapa
+h1{
+    font-size: map-get($titulos, h1);
+    color: map-get($colores, azul);
+}
+
+// Mezclar elementos del mapa
+$titulosColores: map-merge($titulos, $colores);
+
+h1{
+    font-size: map-get($titulosColores, h2);
+    color: map-get($titulosColores, verde);
+}
+
+// Eliminar elementos del mapa
+$nuevoTitulo: map-remove($titulos, h1);
