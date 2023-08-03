@@ -1,0 +1,98 @@
+// OVERLAY
+.overlay{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: #000, $alpha: 0.5);
+}
+
+
+// ICONOS
+.icons{
+    @include dflex(space-between, center, row nowrap);
+    
+    a{
+        @include dflex(center, center, row nowrap);
+        background: $primary-color;
+        border-radius: 50%;
+        color: $white;
+        transition: all .5s;
+
+        &:hover{
+            background: $primary-color-dark;
+        }
+    }
+}
+
+// BUTTONS
+.btn{
+    width: 170px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 25px;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.btn-white{
+    @extend .btn;
+    @include btn($white, $primary-color);
+
+    &:hover{
+        background: $primary-color-dark;
+        color: $white;
+    }
+}
+
+.btn-primary{
+    @extend .btn;
+    @include btn($primary-color, $white);
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+// CARDS
+.card{
+    width: 30%;
+    height: 300px;
+    box-shadow: 0 0 10px 5px rgba($color: #000, $alpha: 0.5);
+    margin-bottom: 30px;
+    background-size: cover !important;
+    background-position: center !important;
+    cursor: default;
+
+    &-container {
+        @include dflex(center, center, column nowrap);
+        width: 100%;
+        height: 100%;
+        background: rgba($color: $white, $alpha: 0.7);
+        opacity: 0;
+        transition: all .5s;
+
+        .card-title{
+            font-size: 40px;
+            font-weight: 400;
+            padding: 10px 0 0 0;
+            color: $gris700;
+        }
+    }
+
+    &:hover &-container{
+        opacity: 1;
+    }
+}
+
+@for $i from 1 through 6 {
+    .card:nth-child(#{$i}){
+        background: url(../img/product#{$i}.jpg);
+    }
+}
