@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+
+<svg class="goo-filter" viewBox="0 0 1 1">
+  <filter id="goo">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 50 -20" result="goo" />
+    <feBlend in="SourceGraphic" in2="goo" />
+  </filter>
+</svg>
+
+<div class="app">
+  <input type="checkbox" id="toggle" name="toggle" class="toggle" />
+    <div class="container__button">
+      <label class="button" for="toggle"></label>
+    </div>
+    <div class="content">
+        <div class="content_text">
+          <h2>HEAD</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus libero nostrum nobis rem odit accusantium 
+          </p>
+        </div>
+        <div class="bg-content">
+            <div class="drip"></div>
+            <div class="drip"></div>
+            <div class="drip"></div>
+        </div>
+    </div>
+    
+    <div class="description">
+      <div class="description__content">
+        <h2>down side</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur 
+        </p>
+      </div>
+      <div class="bg-description">
+          <div class="drip"></div>
+          <div class="drip"></div>
+          <div class="drip"></div>
+      </div>
+    </div>  
+  
+</div>
+</body>
+</html>

@@ -2,7 +2,7 @@ const pre = document.querySelector("pre");
 const container = document.querySelector('.container');
 
 container.addEventListener("mousemove", (e) => {
-    console.log('mouse');
+    // console.log('mouse');
   rotateElement(e, pre);
   
 });
@@ -28,6 +28,10 @@ const rotateElement = (event, element) => {
   element.style.setProperty("--rotateY", -1 * offsetY + "deg");
   
   element.style.setProperty("--delay", delay);
+
+  console.log({
+    offsetX, offsetY, middleX, middleY, x, y,
+  });
 }
 
 const stopElement = (element) => {
